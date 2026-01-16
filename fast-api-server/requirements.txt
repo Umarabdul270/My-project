@@ -4,4 +4,4 @@ pydantic
 python-multipart
 pillow
 numpy
-tensorflow
+tensorflow-cpu==2.15.0
