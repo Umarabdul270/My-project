@@ -4,10 +4,9 @@ from app.models.registry import MODEL_REGISTRY
 
 LOADED_MODELS = {}
 
-
 def _load_tf_model(path: str):
     import tensorflow as tf
-    return tf.keras.models.load_model(path)
+    return tf.keras.models.load_model(path, compile=False)
 
 
 def _load_torch_model(path: str):
